@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jivy Juice — All-Natural Fresh Pressed Juices</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- Color overlay that shifts per juice -->
+  <div class="bg-color" id="bgColor"></div>
+
+  <!-- ======= NAV ======= -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">JIVY<span>.</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#theater">Juices</a>
+      <a href="#story">Story</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="nav-cta">Order&nbsp;&nearr;</a>
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span></button>
+  </nav>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero">
+    <div class="hero-grain"></div>
+    <div class="hero-left">
+      <p class="hero-eyebrow">All-Natural &bull; Fresh Pressed &bull; No Compromise</p>
+      <h1 class="hero-h1">
+        <span class="h1-line"><span class="h1-word">Drink</span></span>
+        <span class="h1-line"><span class="h1-word alt">with</span></span>
+        <span class="h1-line"><span class="h1-word pop">purpose.</span></span>
+      </h1>
+      <p class="hero-sub">Seven legendary cold-pressed blends, each one a concentrated strike force of vitamins, antioxidants, and raw power.</p>
+      <div class="hero-actions">
+        <a href="#theater" class="btn-pill">See the lineup</a>
+        <a href="tel:321-800-9226" class="btn-link">321-800-9226 &rarr;</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-stack">
+        <img class="hero-img hi-1" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Purple-Rain.webp" alt="Purple Rain"/>
+        <img class="hero-img hi-2" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Voltron-Shot.webp" alt="Voltron Shot"/>
+        <img class="hero-img hi-3" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Red-Rover.webp" alt="Red Rover"/>
+        <img class="hero-img hi-4" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Incredible-Hulk.webp" alt="Incredible Hulk"/>
+      </div>
+    </div>
+    <div class="hero-scrolldown"><span></span></div>
+  </section>
+
+  <!-- ======= TICKER ======= -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>Voltron Shot</span><i></i><span>Red Rover</span><i></i><span>Purple Rain</span><i></i><span>Pac Man</span><i></i><span>Incredible Hulk</span><i></i><span>Garfield</span><i></i><span>Beet Street</span><i></i>
+      <span>Voltron Shot</span><i></i><span>Red Rover</span><i></i><span>Purple Rain</span><i></i><span>Pac Man</span><i></i><span>Incredible Hulk</span><i></i><span>Garfield</span><i></i><span>Beet Street</span><i></i>
+    </div>
+  </div>
+
+  <!-- ======= JUICE THEATER — staggered vertical cascade ======= -->
+  <section class="theater" id="theater">
+
+    <!-- #1 Voltron Shot — full-width cinematic -->
+    <article class="jcard jcard--wide" data-bg="#1a1408" data-accent="#F9A825">
+      <div class="jcard-img">
+        <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Voltron-Shot.webp" alt="Voltron Shot" loading="lazy"/>
+      </div>
+      <div class="jcard-body">
+        <span class="jcard-idx">01</span>
+        <h2 class="jcard-name">Voltron Shot</h2>
+        <p class="jcard-ingr">Fresh ginger &middot; turmeric &middot; orange &middot; black pepper</p>
+        <p class="jcard-desc">Your daily powerhouse — a radiant golden elixir that battles inflammation, supercharges immunity, and unlocks peak nutrient absorption.</p>
+        <div class="jcard-tags"><span>Anti-Inflammatory</span><span>Immunity</span><span>Digestion</span></div>
+        <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="jcard-cta">Order&nbsp;&nearr;</a>
+      </div>
+    </article>
+
+    <!-- #2 Red Rover — image left -->
+    <article class="jcard jcard--left" data-bg="#1a0808" data-accent="#E53935">
+      <div class="jcard-img">
+        <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Red-Rover.webp" alt="Red Rover" loading="lazy"/>
+      </div>
+      <div class="jcard-body">
+        <span class="jcard-idx">02</span>
+        <h2 class="jcard-name">Red Rover</h2>
+        <p class="jcard-ingr">Watermelon &middot; strawberries &middot; raspberries</p>
+        <p class="jcard-desc">A bold ruby-red charge of pure summer power — deep hydration, natural electrolytes, and a massive wave of vitamin C.</p>
+        <div class="jcard-tags"><span>Hydration</span><span>Vitamin C</span><span>Skin Glow</span></div>
+        <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="jcard-cta">Order&nbsp;&nearr;</a>
+      </div>
+    </article>
+
+    <!-- #3 Purple Rain — image right -->
+    <article class="jcard jcard--right" data-bg="#140a1a" data-accent="#9C27B0">
+      <div class="jcard-img">
+        <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Purple-Rain.webp" alt="Purple Rain" loading="lazy"/>
+      </div>
+      <div class="jcard-body">
+        <span class="jcard-idx">03</span>
+        <h2 class="jcard-name">Purple Rain</h2>
+        <p class="jcard-ingr">Blueberries &middot; pineapple &middot; fresh lemon</p>
+        <p class="jcard-desc">An electric violet surge of superfruit intensity — antioxidants, smooth digestion, and a clean balanced energy lift.</p>
+        <div class="jcard-tags"><span>Antioxidants</span><span>Energy</span><span>Digestion</span></div>
+        <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="jcard-cta">Order&nbsp;&nearr;</a>
+      </div>
+    </article>
+
+    <!-- #4 Pac Man — full-width cinematic -->
+    <article class="jcard jcard--wide" data-bg="#0e1408" data-accent="#7CB342">
+      <div class="jcard-img">
+        <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Pac-Man.webp" alt="Pac Man" loading="lazy"/>
+      </div>
+      <div class="jcard-body">
+        <span class="jcard-idx">04</span>
+        <h2 class="jcard-name">Pac Man</h2>
+        <p class="jcard-ingr">Cucumber &middot; pineapple &middot; strawberries &middot; apples</p>
+        <p class="jcard-desc">A golden-green power pellet — ultra-hydrating, bursting with vitamin C, fueling youthful skin glow and smooth digestion.</p>
+        <div class="jcard-tags"><span>Hydration</span><span>Heart Health</span><span>Energy</span></div>
+        <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="jcard-cta">Order&nbsp;&nearr;</a>
+      </div>
+    </article>
+
+    <!-- #5 Incredible Hulk — image left -->
+    <article class="jcard jcard--left" data-bg="#081408" data-accent="#2E7D32">
+      <div class="jcard-img">
+        <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Incredible-Hulk.webp" alt="Incredible Hulk" loading="lazy"/>
+      </div>
+      <div class="jcard-body">
+        <span class="jcard-idx">05</span>
+        <h2 class="jcard-name">Incredible Hulk</h2>
+        <p class="jcard-ingr">Kiwi &middot; apples &middot; spinach &middot; cucumber &middot; celery &middot; ginger</p>
+        <p class="jcard-desc">A raging green gamma-powered shot — deep hydration, natural detox, and Hulk-level energy to dominate your day.</p>
+        <div class="jcard-tags"><span>Detox</span><span>Energy</span><span>Anti-Inflammatory</span></div>
+        <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="jcard-cta">Order&nbsp;&nearr;</a>
+      </div>
+    </article>
+
+    <!-- #6 Garfield — image right -->
+    <article class="jcard jcard--right" data-bg="#1a1208" data-accent="#FF9800">
+      <div class="jcard-img">
+        <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Garfield.webp" alt="Garfield" loading="lazy"/>
+      </div>
+      <div class="jcard-body">
+        <span class="jcard-idx">06</span>
+        <h2 class="jcard-name">Garfield</h2>
+        <p class="jcard-ingr">Pineapple &middot; oranges &middot; carrots &middot; ginger</p>
+        <p class="jcard-desc">Your laid-back orange-striped legend — a massive vitamin C hit, anti-inflammatory muscle, and crash-free energy all day.</p>
+        <div class="jcard-tags"><span>Vitamin C</span><span>Skin &amp; Eyes</span><span>Digestion</span></div>
+        <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="jcard-cta">Order&nbsp;&nearr;</a>
+      </div>
+    </article>
+
+    <!-- #7 Beet Street — full-width cinematic -->
+    <article class="jcard jcard--wide" data-bg="#1a0808" data-accent="#C62828">
+      <div class="jcard-img">
+        <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Beet-Street.webp" alt="Beet Street" loading="lazy"/>
+      </div>
+      <div class="jcard-body">
+        <span class="jcard-idx">07</span>
+        <h2 class="jcard-name">Beet Street</h2>
+        <p class="jcard-ingr">Beets &middot; sweet potatoes &middot; oranges &middot; pineapple &middot; ginger</p>
+        <p class="jcard-desc">A bold crimson surge — powers up circulation and heart health with beet nitric oxide, quick energy, and sustained endurance.</p>
+        <div class="jcard-tags"><span>Heart Health</span><span>Endurance</span><span>Skin Glow</span></div>
+        <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="jcard-cta">Order&nbsp;&nearr;</a>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ======= STORY + PROOF ======= -->
+  <section class="story" id="story">
+    <div class="story-split">
+      <div class="story-text">
+        <p class="eyebrow">Our Philosophy</p>
+        <h2 class="sec-h2">Your juice should work<br/><em>as hard as you do.</em></h2>
+        <p>Not watered-down, sugar-loaded stuff — real, cold-pressed power from nature's fiercest ingredients. Packed with vitamins, antioxidants, and enzymes your body craves. No shortcuts, no compromises.</p>
+      </div>
+      <div class="story-nums">
+        <div class="sn"><span class="sn-val" data-target="100">0</span><span class="sn-u">%</span><p>All-Natural</p></div>
+        <div class="sn"><span class="sn-val" data-target="7">0</span><span class="sn-u"></span><p>Blends</p></div>
+        <div class="sn"><span class="sn-val" data-target="0">0</span><span class="sn-u">g</span><p>Added Sugar</p></div>
+      </div>
+    </div>
+
+    <!-- Benefits strip -->
+    <div class="perks">
+      <div class="perk">
+        <h3>Immune Defense</h3>
+        <p>Vitamin C and antioxidants rally your immune system.</p>
+      </div>
+      <div class="perk">
+        <h3>Crush Inflammation</h3>
+        <p>Ginger, turmeric, and bromelain team up hard.</p>
+      </div>
+      <div class="perk">
+        <h3>Glowing Skin</h3>
+        <p>Lycopene and anthocyanins fuel radiant skin.</p>
+      </div>
+      <div class="perk">
+        <h3>Clean Energy</h3>
+        <p>Steady, crash-free energy from natural fruit sugars.</p>
+      </div>
+      <div class="perk">
+        <h3>Heart Health</h3>
+        <p>Beet nitric oxide and potassium keep you strong.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= REVIEWS TICKER ======= -->
+  <section class="reviews">
+    <div class="reviews-track">
+      <div class="rev">&ldquo;Voltron Shot is no joke. That ginger-turmeric combo hits different.&rdquo; <strong>&mdash; David M.</strong></div>
+      <div class="rev">&ldquo;Incredible Hulk is my pre-workout secret. Clean energy, no crash.&rdquo; <strong>&mdash; Keisha J.</strong></div>
+      <div class="rev">&ldquo;Purple Rain is magical. My whole family is hooked.&rdquo; <strong>&mdash; Rachel S.</strong></div>
+      <div class="rev">&ldquo;Garfield is my lazy Sunday ritual. Tastes like liquid sunshine.&rdquo; <strong>&mdash; Tony L.</strong></div>
+      <div class="rev">&ldquo;Voltron Shot is no joke. That ginger-turmeric combo hits different.&rdquo; <strong>&mdash; David M.</strong></div>
+      <div class="rev">&ldquo;Incredible Hulk is my pre-workout secret. Clean energy, no crash.&rdquo; <strong>&mdash; Keisha J.</strong></div>
+      <div class="rev">&ldquo;Purple Rain is magical. My whole family is hooked.&rdquo; <strong>&mdash; Rachel S.</strong></div>
+      <div class="rev">&ldquo;Garfield is my lazy Sunday ritual. Tastes like liquid sunshine.&rdquo; <strong>&mdash; Tony L.</strong></div>
+    </div>
+  </section>
+
+  <!-- ======= CTA ======= -->
+  <section class="cta">
+    <h2 class="cta-h2">Your upgrade<br/><em>starts now.</em></h2>
+    <div class="cta-row">
+      <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="btn-pill btn-pill--dark">Shop Now</a>
+      <a href="tel:321-800-9226" class="btn-link btn-link--dark">321-800-9226 &rarr;</a>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="foot" id="contact">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="#" class="foot-logo">JIVY<span>.</span></a>
+        <p>All-natural, fresh pressed juices crafted to supercharge your body from the inside out.</p>
+        <div class="foot-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/><polygon fill="#fff" points="9.545,15.568 15.818,12 9.545,8.432"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col"><h4>Juices</h4><a href="#theater">Voltron Shot</a><a href="#theater">Red Rover</a><a href="#theater">Purple Rain</a><a href="#theater">Pac Man</a><a href="#theater">Incredible Hulk</a><a href="#theater">Garfield</a><a href="#theater">Beet Street</a></div>
+      <div class="foot-col"><h4>Company</h4><a href="#story">Our Story</a><a href="https://jivyenterprise.com/" target="_blank" rel="noopener">Shop</a></div>
+      <div class="foot-col"><h4>Contact</h4><a href="tel:321-800-9226">321-800-9226</a><a href="mailto:contact@jivyenterprise.com">contact@jivyenterprise.com</a></div>
+    </div>
+    <div class="foot-bottom">
+      <p>&copy; 2026 Jivy Enterprises LLC</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
