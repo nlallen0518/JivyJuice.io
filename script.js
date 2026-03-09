@@ -51,7 +51,10 @@
   /* ---------- Mobile burger ---------- */
   const burger = document.getElementById("navBurger");
   const navLinks = document.getElementById("navLinks");
-  if (burger) burger.addEventListener("click", () => navLinks.classList.toggle("open"));
+  if (burger) burger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    burger.classList.toggle("open");
+  });
 
   /* ---------- Hero entrance ---------- */
   const htl = gsap.timeline({ defaults: { ease: "power4.out" } });
@@ -179,4 +182,52 @@
   /* ---------- Refresh on resize ---------- */
   let rt;
   window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(() => ScrollTrigger.refresh(), 200); });
+
+  /* ---------- Smooth anchor scrolling ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (e) => {
+      const target = document.querySelector(link.getAttribute("href"));
+      if (!target) return;
+      e.preventDefault();
+      lenis.scrollTo(target, { offset: -60 });
+      // Close mobile menu if open
+      if (navLinks) navLinks.classList.remove("open");
+      if (burger) burger.classList.remove("open");
+    });
+  });
+
+  /* ---------- Nav active state on scroll ---------- */
+  const sections = document.querySelectorAll("section[id]");
+  const navAnchors = document.querySelectorAll(".nav-links a");
+  ScrollTrigger.create({
+    trigger: document.body,
+    start: "top top",
+    end: "max",
+    onUpdate: () => {
+      let current = "";
+      sections.forEach((sec) => {
+        if (sec.getBoundingClientRect().top < window.innerHeight * 0.4) current = sec.id;
+      });
+      navAnchors.forEach((a) => {
+        a.classList.toggle("active", a.getAttribute("href") === "#" + current);
+      });
+    },
+  });
+
+  /* ---------- Scroll to top ---------- */
+  const toTop = document.getElementById("toTop");
+  if (toTop) {
+    ScrollTrigger.create({
+      trigger: document.body,
+      start: "600px top",
+      end: "max",
+      onEnter: () => toTop.classList.add("visible"),
+      onLeaveBack: () => toTop.classList.remove("visible"),
+    });
+    toTop.addEventListener("click", () => lenis.scrollTo(0));
+  }
+
+  /* ---------- Dynamic footer year ---------- */
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 })();

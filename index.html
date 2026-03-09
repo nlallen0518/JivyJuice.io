@@ -4,9 +4,18 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jivy Juice — All-Natural Fresh Pressed Juices</title>
+  <meta name="description" content="Seven legendary cold-pressed juice blends crafted from all-natural fruits and vegetables. No added sugar, no compromise — just pure power in every sip."/>
+  <meta property="og:title" content="Jivy Juice — All-Natural Fresh Pressed Juices"/>
+  <meta property="og:description" content="Seven legendary cold-pressed blends. 100% natural, fresh pressed, zero added sugar."/>
+  <meta property="og:image" content="https://jivyenterprise.com/wp-content/uploads/2025/09/Voltron-Shot.webp"/>
+  <meta property="og:type" content="website"/>
+  <meta name="theme-color" content="#0a0a0a"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍹</text></svg>"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="preload" as="image" href="https://jivyenterprise.com/wp-content/uploads/2025/09/Purple-Rain.webp"/>
+  <link rel="preload" as="image" href="https://jivyenterprise.com/wp-content/uploads/2025/09/Voltron-Shot.webp"/>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
@@ -50,13 +59,13 @@
     </div>
     <div class="hero-right">
       <div class="hero-stack">
-        <img class="hero-img hi-1" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Purple-Rain.webp" alt="Purple Rain"/>
-        <img class="hero-img hi-2" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Voltron-Shot.webp" alt="Voltron Shot"/>
+        <img class="hero-img hi-1" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Purple-Rain.webp" alt="Purple Rain" fetchpriority="high"/>
+        <img class="hero-img hi-2" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Voltron-Shot.webp" alt="Voltron Shot" fetchpriority="high"/>
         <img class="hero-img hi-3" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Red-Rover.webp" alt="Red Rover"/>
         <img class="hero-img hi-4" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Incredible-Hulk.webp" alt="Incredible Hulk"/>
       </div>
     </div>
-    <div class="hero-scrolldown"><span></span></div>
+    <div class="hero-scrolldown"><span></span><small>Scroll</small></div>
   </section>
 
   <!-- ======= TICKER ======= -->
@@ -71,7 +80,7 @@
   <section class="theater" id="theater">
 
     <!-- #1 Voltron Shot — full-width cinematic -->
-    <article class="jcard jcard--wide" data-bg="#1a1408" data-accent="#F9A825">
+    <article class="jcard jcard--wide" data-bg="#1a1408" data-accent="#F9A825" style="--juice:#F9A825">
       <div class="jcard-img">
         <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Voltron-Shot.webp" alt="Voltron Shot" loading="lazy"/>
       </div>
@@ -86,7 +95,7 @@
     </article>
 
     <!-- #2 Red Rover — image left -->
-    <article class="jcard jcard--left" data-bg="#1a0808" data-accent="#E53935">
+    <article class="jcard jcard--left" data-bg="#1a0808" data-accent="#E53935" style="--juice:#E53935">
       <div class="jcard-img">
         <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Red-Rover.webp" alt="Red Rover" loading="lazy"/>
       </div>
@@ -101,7 +110,7 @@
     </article>
 
     <!-- #3 Purple Rain — image right -->
-    <article class="jcard jcard--right" data-bg="#140a1a" data-accent="#9C27B0">
+    <article class="jcard jcard--right" data-bg="#140a1a" data-accent="#9C27B0" style="--juice:#9C27B0">
       <div class="jcard-img">
         <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Purple-Rain.webp" alt="Purple Rain" loading="lazy"/>
       </div>
@@ -116,7 +125,7 @@
     </article>
 
     <!-- #4 Pac Man — full-width cinematic -->
-    <article class="jcard jcard--wide" data-bg="#0e1408" data-accent="#7CB342">
+    <article class="jcard jcard--wide" data-bg="#0e1408" data-accent="#7CB342" style="--juice:#7CB342">
       <div class="jcard-img">
         <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Pac-Man.webp" alt="Pac Man" loading="lazy"/>
       </div>
@@ -131,7 +140,7 @@
     </article>
 
     <!-- #5 Incredible Hulk — image left -->
-    <article class="jcard jcard--left" data-bg="#081408" data-accent="#2E7D32">
+    <article class="jcard jcard--left" data-bg="#081408" data-accent="#2E7D32" style="--juice:#2E7D32">
       <div class="jcard-img">
         <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Incredible-Hulk.webp" alt="Incredible Hulk" loading="lazy"/>
       </div>
@@ -146,7 +155,7 @@
     </article>
 
     <!-- #6 Garfield — image right -->
-    <article class="jcard jcard--right" data-bg="#1a1208" data-accent="#FF9800">
+    <article class="jcard jcard--right" data-bg="#1a1208" data-accent="#FF9800" style="--juice:#FF9800">
       <div class="jcard-img">
         <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Garfield.webp" alt="Garfield" loading="lazy"/>
       </div>
@@ -161,7 +170,7 @@
     </article>
 
     <!-- #7 Beet Street — full-width cinematic -->
-    <article class="jcard jcard--wide" data-bg="#1a0808" data-accent="#C62828">
+    <article class="jcard jcard--wide" data-bg="#1a0808" data-accent="#C62828" style="--juice:#C62828">
       <div class="jcard-img">
         <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Beet-Street.webp" alt="Beet Street" loading="lazy"/>
       </div>
@@ -257,13 +266,18 @@
       <div class="foot-col"><h4>Contact</h4><a href="tel:321-800-9226">321-800-9226</a><a href="mailto:contact@jivyenterprise.com">contact@jivyenterprise.com</a></div>
     </div>
     <div class="foot-bottom">
-      <p>&copy; 2026 Jivy Enterprises LLC</p>
+      <p>&copy; <span id="year">2026</span> Jivy Enterprises LLC</p>
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-  <script src="script.js"></script>
+  <!-- Scroll to top -->
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script defer src="script.js"></script>
 </body>
 </html>
