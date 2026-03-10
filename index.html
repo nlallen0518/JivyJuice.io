@@ -9,11 +9,11 @@
   <meta property="og:description" content="Seven legendary cold-pressed blends. 100% natural, fresh pressed, zero added sugar."/>
   <meta property="og:image" content="https://jivyenterprise.com/wp-content/uploads/2025/09/Voltron-Shot.webp"/>
   <meta property="og:type" content="website"/>
-  <meta name="theme-color" content="#0a0a0a"/>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍹</text></svg>"/>
+  <meta name="theme-color" content="#FAF7F0"/>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%83%3C/text%3E%3C/svg%3E"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <link rel="preload" as="image" href="https://jivyenterprise.com/wp-content/uploads/2025/09/Purple-Rain.webp"/>
   <link rel="preload" as="image" href="https://jivyenterprise.com/wp-content/uploads/2025/09/Voltron-Shot.webp"/>
   <link rel="stylesheet" href="styles.css"/>
@@ -29,43 +29,57 @@
   <!-- Color overlay that shifts per juice -->
   <div class="bg-color" id="bgColor"></div>
 
+  <!-- Decorative cyan triangles -->
+  <div class="tri tri--1"></div>
+  <div class="tri tri--2"></div>
+  <div class="tri tri--3"></div>
+
   <!-- ======= NAV ======= -->
   <nav class="nav" id="nav">
-    <a href="#" class="nav-logo">JIVY<span>.</span></a>
-    <div class="nav-links" id="navLinks">
-      <a href="#theater">Juices</a>
-      <a href="#story">Story</a>
-      <a href="#contact">Contact</a>
+    <div class="nav-left">
+      <a href="#" class="nav-logo" aria-label="Jivy Juice Home">
+        <span class="logo-text">J!VY<br/>JU!CE</span>
+      </a>
     </div>
-    <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="nav-cta">Order&nbsp;&nearr;</a>
-    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span></button>
+    <div class="nav-right">
+      <div class="nav-social">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/><polygon fill="#fff" points="9.545,15.568 15.818,12 9.545,8.432"/></svg></a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#story">Our Origin</a>
+        <a href="#theater">Selections</a>
+        <a href="https://jivyenterprise.com/" target="_blank" rel="noopener">Shop</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
   </nav>
 
   <!-- ======= HERO ======= -->
-  <section class="hero">
-    <div class="hero-grain"></div>
-    <div class="hero-left">
+  <section class="hero" id="hero">
+    <div class="hero-content">
       <p class="hero-eyebrow">All-Natural &bull; Fresh Pressed &bull; No Compromise</p>
       <h1 class="hero-h1">
         <span class="h1-line"><span class="h1-word">Drink</span></span>
-        <span class="h1-line"><span class="h1-word alt">with</span></span>
+        <span class="h1-line"><span class="h1-word">with</span></span>
         <span class="h1-line"><span class="h1-word pop">purpose.</span></span>
       </h1>
-      <p class="hero-sub">Seven legendary cold-pressed blends, each one a concentrated strike force of vitamins, antioxidants, and raw power.</p>
       <div class="hero-actions">
-        <a href="#theater" class="btn-pill">See the lineup</a>
-        <a href="tel:321-800-9226" class="btn-link">321-800-9226 &rarr;</a>
+        <a href="#theater" class="btn-skew">See the lineup</a>
+        <a href="tel:321-800-9226" class="btn-link btn-link--dark">321-800-9226 &rarr;</a>
       </div>
     </div>
-    <div class="hero-right">
-      <div class="hero-stack">
-        <img class="hero-img hi-1" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Purple-Rain.webp" alt="Purple Rain" fetchpriority="high"/>
-        <img class="hero-img hi-2" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Voltron-Shot.webp" alt="Voltron Shot" fetchpriority="high"/>
-        <img class="hero-img hi-3" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Red-Rover.webp" alt="Red Rover"/>
-        <img class="hero-img hi-4" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Incredible-Hulk.webp" alt="Incredible Hulk"/>
-      </div>
+    <div class="hero-bottles">
+      <div class="hero-tri hero-tri--1"></div>
+      <div class="hero-tri hero-tri--2"></div>
+      <img class="hero-bottle hb-1" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Purple-Rain.webp" alt="Purple Rain" fetchpriority="high"/>
+      <img class="hero-bottle hb-2" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Voltron-Shot.webp" alt="Voltron Shot" fetchpriority="high"/>
+      <img class="hero-bottle hb-3" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Incredible-Hulk.webp" alt="Incredible Hulk"/>
+      <img class="hero-bottle hb-4" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Red-Rover.webp" alt="Red Rover"/>
+      <img class="hero-bottle hb-5" src="https://jivyenterprise.com/wp-content/uploads/2025/09/Garfield.webp" alt="Garfield"/>
     </div>
-    <div class="hero-scrolldown"><span></span><small>Scroll</small></div>
   </section>
 
   <!-- ======= TICKER ======= -->
@@ -76,110 +90,124 @@
     </div>
   </div>
 
-  <!-- ======= JUICE THEATER — staggered vertical cascade ======= -->
+  <!-- ======= JUICE THEATER — editorial bottle showcase ======= -->
   <section class="theater" id="theater">
 
-    <!-- #1 Voltron Shot — full-width cinematic -->
-    <article class="jcard jcard--wide" data-bg="#1a1408" data-accent="#F9A825" style="--juice:#F9A825">
-      <div class="jcard-img">
-        <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Voltron-Shot.webp" alt="Voltron Shot" loading="lazy"/>
-      </div>
-      <div class="jcard-body">
-        <span class="jcard-idx">01</span>
+    <!-- #1 Voltron Shot -->
+    <article class="jcard" data-bg="#FFF8E1" style="--juice:#F9A825">
+      <div class="jcard-showcase">
         <h2 class="jcard-name">Voltron Shot</h2>
+        <div class="jcard-bottle">
+          <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Voltron-Shot.webp" alt="Voltron Shot" loading="lazy"/>
+        </div>
+      </div>
+      <div class="jcard-info">
+        <span class="jcard-idx">01</span>
         <p class="jcard-ingr">Fresh ginger &middot; turmeric &middot; orange &middot; black pepper</p>
         <p class="jcard-desc">Your daily powerhouse — a radiant golden elixir that battles inflammation, supercharges immunity, and unlocks peak nutrient absorption.</p>
-        <div class="jcard-tags"><span>Anti-Inflammatory</span><span>Immunity</span><span>Digestion</span></div>
+        <div class="jcard-stats"><div class="jcard-tags"><span>Anti-Inflammatory</span><span>Immunity</span><span>Digestion</span></div></div>
         <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="jcard-cta">Order&nbsp;&nearr;</a>
       </div>
     </article>
 
-    <!-- #2 Red Rover — image left -->
-    <article class="jcard jcard--left" data-bg="#1a0808" data-accent="#E53935" style="--juice:#E53935">
-      <div class="jcard-img">
-        <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Red-Rover.webp" alt="Red Rover" loading="lazy"/>
-      </div>
-      <div class="jcard-body">
-        <span class="jcard-idx">02</span>
+    <!-- #2 Red Rover -->
+    <article class="jcard" data-bg="#FFEBEE" style="--juice:#E53935">
+      <div class="jcard-showcase">
         <h2 class="jcard-name">Red Rover</h2>
+        <div class="jcard-bottle">
+          <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Red-Rover.webp" alt="Red Rover" loading="lazy"/>
+        </div>
+      </div>
+      <div class="jcard-info">
+        <span class="jcard-idx">02</span>
         <p class="jcard-ingr">Watermelon &middot; strawberries &middot; raspberries</p>
         <p class="jcard-desc">A bold ruby-red charge of pure summer power — deep hydration, natural electrolytes, and a massive wave of vitamin C.</p>
-        <div class="jcard-tags"><span>Hydration</span><span>Vitamin C</span><span>Skin Glow</span></div>
+        <div class="jcard-stats"><div class="jcard-tags"><span>Hydration</span><span>Vitamin C</span><span>Skin Glow</span></div></div>
         <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="jcard-cta">Order&nbsp;&nearr;</a>
       </div>
     </article>
 
-    <!-- #3 Purple Rain — image right -->
-    <article class="jcard jcard--right" data-bg="#140a1a" data-accent="#9C27B0" style="--juice:#9C27B0">
-      <div class="jcard-img">
-        <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Purple-Rain.webp" alt="Purple Rain" loading="lazy"/>
-      </div>
-      <div class="jcard-body">
-        <span class="jcard-idx">03</span>
+    <!-- #3 Purple Rain -->
+    <article class="jcard" data-bg="#F3E5F5" style="--juice:#9C27B0">
+      <div class="jcard-showcase">
         <h2 class="jcard-name">Purple Rain</h2>
+        <div class="jcard-bottle">
+          <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Purple-Rain.webp" alt="Purple Rain" loading="lazy"/>
+        </div>
+      </div>
+      <div class="jcard-info">
+        <span class="jcard-idx">03</span>
         <p class="jcard-ingr">Blueberries &middot; pineapple &middot; fresh lemon</p>
         <p class="jcard-desc">An electric violet surge of superfruit intensity — antioxidants, smooth digestion, and a clean balanced energy lift.</p>
-        <div class="jcard-tags"><span>Antioxidants</span><span>Energy</span><span>Digestion</span></div>
+        <div class="jcard-stats"><div class="jcard-tags"><span>Antioxidants</span><span>Energy</span><span>Digestion</span></div></div>
         <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="jcard-cta">Order&nbsp;&nearr;</a>
       </div>
     </article>
 
-    <!-- #4 Pac Man — full-width cinematic -->
-    <article class="jcard jcard--wide" data-bg="#0e1408" data-accent="#7CB342" style="--juice:#7CB342">
-      <div class="jcard-img">
-        <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Pac-Man.webp" alt="Pac Man" loading="lazy"/>
-      </div>
-      <div class="jcard-body">
-        <span class="jcard-idx">04</span>
+    <!-- #4 Pac Man -->
+    <article class="jcard" data-bg="#F1F8E9" style="--juice:#7CB342">
+      <div class="jcard-showcase">
         <h2 class="jcard-name">Pac Man</h2>
+        <div class="jcard-bottle">
+          <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Pac-Man.webp" alt="Pac Man" loading="lazy"/>
+        </div>
+      </div>
+      <div class="jcard-info">
+        <span class="jcard-idx">04</span>
         <p class="jcard-ingr">Cucumber &middot; pineapple &middot; strawberries &middot; apples</p>
         <p class="jcard-desc">A golden-green power pellet — ultra-hydrating, bursting with vitamin C, fueling youthful skin glow and smooth digestion.</p>
-        <div class="jcard-tags"><span>Hydration</span><span>Heart Health</span><span>Energy</span></div>
+        <div class="jcard-stats"><div class="jcard-tags"><span>Hydration</span><span>Heart Health</span><span>Energy</span></div></div>
         <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="jcard-cta">Order&nbsp;&nearr;</a>
       </div>
     </article>
 
-    <!-- #5 Incredible Hulk — image left -->
-    <article class="jcard jcard--left" data-bg="#081408" data-accent="#2E7D32" style="--juice:#2E7D32">
-      <div class="jcard-img">
-        <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Incredible-Hulk.webp" alt="Incredible Hulk" loading="lazy"/>
-      </div>
-      <div class="jcard-body">
-        <span class="jcard-idx">05</span>
+    <!-- #5 Incredible Hulk -->
+    <article class="jcard" data-bg="#E8F5E9" style="--juice:#2E7D32">
+      <div class="jcard-showcase">
         <h2 class="jcard-name">Incredible Hulk</h2>
+        <div class="jcard-bottle">
+          <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Incredible-Hulk.webp" alt="Incredible Hulk" loading="lazy"/>
+        </div>
+      </div>
+      <div class="jcard-info">
+        <span class="jcard-idx">05</span>
         <p class="jcard-ingr">Kiwi &middot; apples &middot; spinach &middot; cucumber &middot; celery &middot; ginger</p>
         <p class="jcard-desc">A raging green gamma-powered shot — deep hydration, natural detox, and Hulk-level energy to dominate your day.</p>
-        <div class="jcard-tags"><span>Detox</span><span>Energy</span><span>Anti-Inflammatory</span></div>
+        <div class="jcard-stats"><div class="jcard-tags"><span>Detox</span><span>Energy</span><span>Anti-Inflammatory</span></div></div>
         <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="jcard-cta">Order&nbsp;&nearr;</a>
       </div>
     </article>
 
-    <!-- #6 Garfield — image right -->
-    <article class="jcard jcard--right" data-bg="#1a1208" data-accent="#FF9800" style="--juice:#FF9800">
-      <div class="jcard-img">
-        <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Garfield.webp" alt="Garfield" loading="lazy"/>
-      </div>
-      <div class="jcard-body">
-        <span class="jcard-idx">06</span>
+    <!-- #6 Garfield -->
+    <article class="jcard" data-bg="#FFF3E0" style="--juice:#FF9800">
+      <div class="jcard-showcase">
         <h2 class="jcard-name">Garfield</h2>
+        <div class="jcard-bottle">
+          <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Garfield.webp" alt="Garfield" loading="lazy"/>
+        </div>
+      </div>
+      <div class="jcard-info">
+        <span class="jcard-idx">06</span>
         <p class="jcard-ingr">Pineapple &middot; oranges &middot; carrots &middot; ginger</p>
         <p class="jcard-desc">Your laid-back orange-striped legend — a massive vitamin C hit, anti-inflammatory muscle, and crash-free energy all day.</p>
-        <div class="jcard-tags"><span>Vitamin C</span><span>Skin &amp; Eyes</span><span>Digestion</span></div>
+        <div class="jcard-stats"><div class="jcard-tags"><span>Vitamin C</span><span>Skin &amp; Eyes</span><span>Digestion</span></div></div>
         <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="jcard-cta">Order&nbsp;&nearr;</a>
       </div>
     </article>
 
-    <!-- #7 Beet Street — full-width cinematic -->
-    <article class="jcard jcard--wide" data-bg="#1a0808" data-accent="#C62828" style="--juice:#C62828">
-      <div class="jcard-img">
-        <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Beet-Street.webp" alt="Beet Street" loading="lazy"/>
-      </div>
-      <div class="jcard-body">
-        <span class="jcard-idx">07</span>
+    <!-- #7 Beet Street -->
+    <article class="jcard" data-bg="#FCE4EC" style="--juice:#C62828">
+      <div class="jcard-showcase">
         <h2 class="jcard-name">Beet Street</h2>
+        <div class="jcard-bottle">
+          <img src="https://jivyenterprise.com/wp-content/uploads/2025/09/Beet-Street.webp" alt="Beet Street" loading="lazy"/>
+        </div>
+      </div>
+      <div class="jcard-info">
+        <span class="jcard-idx">07</span>
         <p class="jcard-ingr">Beets &middot; sweet potatoes &middot; oranges &middot; pineapple &middot; ginger</p>
         <p class="jcard-desc">A bold crimson surge — powers up circulation and heart health with beet nitric oxide, quick energy, and sustained endurance.</p>
-        <div class="jcard-tags"><span>Heart Health</span><span>Endurance</span><span>Skin Glow</span></div>
+        <div class="jcard-stats"><div class="jcard-tags"><span>Heart Health</span><span>Endurance</span><span>Skin Glow</span></div></div>
         <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="jcard-cta">Order&nbsp;&nearr;</a>
       </div>
     </article>
@@ -244,8 +272,8 @@
   <section class="cta">
     <h2 class="cta-h2">Your upgrade<br/><em>starts now.</em></h2>
     <div class="cta-row">
-      <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="btn-pill btn-pill--dark">Shop Now</a>
-      <a href="tel:321-800-9226" class="btn-link btn-link--dark">321-800-9226 &rarr;</a>
+      <a href="https://jivyenterprise.com/" target="_blank" rel="noopener" class="btn-skew btn-skew--light">Shop Now</a>
+      <a href="tel:321-800-9226" class="btn-link btn-link--light">321-800-9226 &rarr;</a>
     </div>
   </section>
 
@@ -253,7 +281,9 @@
   <footer class="foot" id="contact">
     <div class="foot-top">
       <div class="foot-brand">
-        <a href="#" class="foot-logo">JIVY<span>.</span></a>
+        <a href="#" class="foot-logo" aria-label="Jivy Juice Home">
+          <span class="logo-text">J!VY JU!CE</span>
+        </a>
         <p>All-natural, fresh pressed juices crafted to supercharge your body from the inside out.</p>
         <div class="foot-social">
           <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>

@@ -6,9 +6,10 @@
 
   /* ---------- Lenis Smooth Scroll ---------- */
   const lenis = new Lenis({
-    duration: 1.0,
+    duration: 1.4,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     smoothWheel: true,
+    wheelMultiplier: 0.8,
   });
   lenis.on("scroll", ScrollTrigger.update);
   gsap.ticker.add((time) => lenis.raf(time * 1000));
@@ -48,6 +49,16 @@
     },
   });
 
+  /* ---------- Nav light/dark over hero ---------- */
+  nav.classList.add("nav--light");
+  ScrollTrigger.create({
+    trigger: ".hero",
+    start: "top top",
+    end: "bottom top",
+    onLeave: () => nav.classList.remove("nav--light"),
+    onEnterBack: () => nav.classList.add("nav--light"),
+  });
+
   /* ---------- Mobile burger ---------- */
   const burger = document.getElementById("navBurger");
   const navLinks = document.getElementById("navLinks");
@@ -57,21 +68,17 @@
   });
 
   /* ---------- Hero entrance ---------- */
+  gsap.set(".hero-bottle", { opacity: 0, y: 80 });
   const htl = gsap.timeline({ defaults: { ease: "power4.out" } });
   htl
     .to(".hero-eyebrow", { opacity: 1, duration: 0.7, delay: 0.2 })
     .to(".h1-word", { y: 0, duration: 1.0, stagger: 0.1 }, "<0.15")
-    .to(".hero-sub", { opacity: 1, duration: 0.7 }, "-=0.3")
     .to(".hero-actions", { opacity: 1, duration: 0.7 }, "-=0.3")
-    .to(".hero-img", { opacity: 1, y: 0, rotate: 0, stagger: 0.12, duration: 0.9, ease: "back.out(1.4)" }, "-=0.8")
-    .to(".hero-scrolldown", { opacity: 0.6, duration: 0.5 }, "-=0.3");
+    .to(".hero-bottle", { opacity: 1, y: 0, stagger: 0.1, duration: 1, ease: "back.out(1.7)" }, "-=0.8");
 
-  /* Hero images — staggered start positions */
-  gsap.set(".hero-img", { opacity: 0, y: 60, rotate: () => gsap.utils.random(-8, 8) });
-
-  /* Hero parallax on scroll */
-  gsap.to(".hero-stack", {
-    y: -80,
+  /* Hero bottles parallax on scroll */
+  gsap.to(".hero-bottles", {
+    y: -40,
     ease: "none",
     scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: 1 },
   });
@@ -106,12 +113,11 @@
     },
   });
 
-  /* ---------- Juice card reveals — each variant different ---------- */
+  /* ---------- Juice card reveals — editorial showcase ---------- */
   document.querySelectorAll(".jcard").forEach((card) => {
-    const img = card.querySelector(".jcard-img");
-    const body = card.querySelector(".jcard-body");
-    const isRight = card.classList.contains("jcard--right");
-    const isWide = card.classList.contains("jcard--wide");
+    const bottle = card.querySelector(".jcard-bottle");
+    const name = card.querySelector(".jcard-name");
+    const details = card.querySelectorAll(".jcard-ingr, .jcard-desc, .jcard-tags, .jcard-cta");
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -122,29 +128,15 @@
       },
     });
 
-    tl.from(img, {
-      x: isRight ? 80 : isWide ? 0 : -80,
-      y: isWide ? 40 : 0,
-      opacity: 0,
-      scale: 0.92,
-      duration: 1,
-    });
-    tl.from(
-      body,
-      {
-        x: isRight ? -60 : isWide ? 0 : 60,
-        y: isWide ? 30 : 0,
-        opacity: 0,
-        duration: 1,
-      },
-      "<0.15"
-    );
+    tl.from(name, { scale: 0.8, opacity: 0, duration: 1 });
+    tl.from(bottle, { y: 60, opacity: 0, scale: 0.9, duration: 1 }, "<0.1");
+    tl.from(details, { y: 20, opacity: 0, stagger: 0.1, duration: 0.6 }, "-=0.4");
   });
 
-  /* ---------- Juice image parallax ---------- */
-  document.querySelectorAll(".jcard-img img").forEach((img) => {
+  /* ---------- Juice bottle parallax ---------- */
+  document.querySelectorAll(".jcard-bottle img").forEach((img) => {
     gsap.to(img, {
-      y: -30,
+      y: -20,
       ease: "none",
       scrollTrigger: { trigger: img.closest(".jcard"), start: "top bottom", end: "bottom top", scrub: 1.2 },
     });
